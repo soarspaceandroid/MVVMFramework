@@ -22,8 +22,5 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.databinding:dataBinder:1.0-rc0'
-    compile 'io.reactivex:rxandroid:1.+'
-    compile 'io.reactivex:rxjava:1.+'
     compile project(':mvvmlib')
 }

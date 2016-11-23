@@ -1,15 +1,20 @@
 package com.soar.mvvm;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.soar.mvvmlib.base.BaseActivity;
+
+public class MainActivity extends BaseActivity {
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(this , "test" , Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public String getCurrentTitle() {
+        return "test";
     }
 }
